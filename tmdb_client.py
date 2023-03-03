@@ -17,12 +17,6 @@ def get_poster_url(poster_api_path, size="w342"):
     return f"{base_url}{size}/{poster_api_path}"
 
 
-
-#доработать эту функцию - створити словник, що містить назву та URL-адресу плаката до кожного фільму, який буде показано.
-#def get_movie_info():
-    movie_info={get_popular_movies():get_poster_url()}
-    return movie_info
-
 def get_movies(how_many, list_type):
     data = get_popular_movies(list_type)
     return data["results"][:how_many]
